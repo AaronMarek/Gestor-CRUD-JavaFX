@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="581.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ejem.ejem.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="581.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label alignment="CENTER" layoutX="48.0" layoutY="42.0" prefHeight="18.0" prefWidth="110.0" text="ID:" textAlignment="CENTER" />
+      <Label alignment="CENTER" layoutX="44.0" layoutY="108.0" prefHeight="18.0" prefWidth="110.0" text="NOMBRE:" />
+      <Label alignment="CENTER" layoutX="48.0" layoutY="177.0" prefHeight="18.0" prefWidth="110.0" text="TELEFONO:" />
+      <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="425.0" text="Total de registros--&gt;" />
+      <Label layoutX="269.0" layoutY="17.0" text="Datos Clientes">
+         <font>
+            <Font name="Arial Black" size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="25.0" layoutY="63.0" />
+      <TextField fx:id="txtName" layoutX="25.0" layoutY="138.0" />
+      <TextField fx:id="txtTelef" layoutX="28.0" layoutY="212.0" />
+      <Button fx:id="btnCreate" layoutX="346.0" layoutY="89.0" mnemonicParsing="false" onAction="#create" prefHeight="26.0" prefWidth="110.0" text="GUARDAR" />
+      <ListView fx:id="listViewDatos" layoutX="200.0" layoutY="288.0" prefHeight="292.0" prefWidth="402.0" />
+      <Button fx:id="btnDelete" layoutX="346.0" layoutY="125.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="110.0" text="BORRAR" />
+      <Button fx:id="btnUpdate" layoutX="346.0" layoutY="164.0" mnemonicParsing="false" onAction="#update" prefHeight="26.0" prefWidth="110.0" text="EDITAR" />
+      <Button fx:id="btnClear" layoutX="346.0" layoutY="199.0" mnemonicParsing="false" onAction="#clear" prefHeight="26.0" prefWidth="110.0" text="LIMPIAR" />
+      <Label fx:id="lblError" alignment="CENTER" disable="true" layoutX="44.0" layoutY="325.0" prefHeight="44.0" prefWidth="110.0" text="INGRESE LOS DATOS PORFAVOR" textAlignment="CENTER" textFill="#ec0202" visible="false" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="144.0" layoutY="425.0" text=" " />
+   </children>
+</AnchorPane>
